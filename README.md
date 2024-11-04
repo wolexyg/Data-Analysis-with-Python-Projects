@@ -102,7 +102,7 @@ avg_math_sch = by_school_df["math_score"].mean()
 #print(avg_math_sch)    
 avg_read_sch = by_school_df["reading_score"].mean()   
 #print(avg_read_sch)             
-# % Passing math and % passing reading        
+## % Passing math and % passing reading        
 #passing_math = len(school_data_complete.loc[school_data_complete["math_score"]>=70]["math_score"])/ttl_students*100     
 
 pass_math_sch = school_data_complete.loc[school_data_complete["math_score"] >= 70].groupby("school_name") ["math_score"].count()/stu_per_sch   
@@ -119,7 +119,35 @@ pass_read_sch = school_data_complete.loc[school_data_complete["reading_score"] >
 #print(pass_math_sch['math_score'].count())   
 #print(type(pass_read_sch))   
 #print(pass_math_sch, pass_read_sch)   
-#pass_math_sch.groupby?     
+#pass_math_sch.groupby?    
+
+## Calculate the overall passing rate (overall average score), i.e. (avg. math score + avg. reading score)/2     
+overall_pass_sch = (pass_math_sch + pass_read_sch) / 2     
+#overall_pass_sch = (avg_math_sch + avg_read_sch) / 2      
+#print(overall_pass_sch)       
+## Data frame to hold School Summary Info     
+ school_summary_df = pd.DataFrame({     
+     "School Type": sch_type,    
+     "Total Students": stu_per_sch,    
+     "Total School Budget": sch_budget,   
+     "Per Student Budget": per_stu_bud,    
+     "Average Math Score": avg_math_sch,    
+     "Average Reading Score": avg_read_sch,    
+     "% Passing Math": pass_math_sch,      
+     "% Passing Reading": pass_read_sch,    
+     "% Overall Passing Rate": overall_pass_sch})         
+
+school_summary_df.style.format({"Total Students": "{:,.0f}",     
+                "Total School Budget": "${:,.0f}",        
+                "Per Student Budget": "${:,.0f}",        
+                "Average Math Score": "{:.2f}",               
+                "Average Reading Score": "{:.2f}",        
+                "% Passing Math": "{:.2%}",       
+                "% Passing Reading": "{:.2%}",      
+                "% Overall Passing Rate": "{:.2%}"})        
+
+    
+
 
 
 ## Results       
