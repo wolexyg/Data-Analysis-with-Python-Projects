@@ -2,8 +2,8 @@
 
 ## Project 1-Python Data Analysis School Project
 ## Table of Contents
--  [Project Overview](project-overview)           
-.- [Data Source](data-source)         
+-  [Project Overview](project-overview)
+-  -  [Data Source](data-source)         
 -  [Results](results)       
 
 ## Project-Overview
