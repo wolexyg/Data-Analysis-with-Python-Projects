@@ -27,29 +27,29 @@ Create a high level snapshot (in table form) of the district's key metrics, incl
 The primary datasets used for thies project was dwonloaded from https://www.kaggle.com/code/jamiedataviz/module4     
 
 ## Data Analysis   
-Calculate the total number of schools       
+Calculate the total number of schools               
 ttl_schools = school_data["school_name"].count()      
 
-Calculate the total number of students      
-ttl_students = student_data["student_name"].count()      
+Calculate the total number of students                   
+ttl_students = student_data["student_name"].count()          
 
-Calculate the total budget    
-budget = school_data["budget"].sum()      
+Calculate the total budget           
+budget = school_data["budget"].sum()                    
 
-Calculate the average math score 
-avg_math = school_data_complete["math_score"].mean()         
+Calculate the average math score         
+avg_math = school_data_complete["math_score"].mean()                 
 
-Calculate the average reading score  
-avg_reading = school_data_complete["reading_score"].mean()         
+Calculate the average reading score         
+avg_reading = school_data_complete["reading_score"].mean()                 
 
-Calculate the overall passing rate (overall average score), i.e. (avg. math score + avg. reading score)/2   
-overall_pass = (avg_math + avg_reading)/2          
+Calculate the overall passing rate (overall average score), i.e. (avg. math score + avg. reading score)/2              
+overall_pass = (avg_math + avg_reading)/2                   
 
-Calculate the percentage of students with a passing math score (70 or greater)
-passing_math = len(school_data_complete.loc[school_data_complete["math_score"]>=70]["math_score"])/ttl_students*100     
+Calculate the percentage of students with a passing math score (70 or greater)                
+passing_math = len(school_data_complete.loc[school_data_complete["math_score"]>=70]["math_score"])/ttl_students*100           
 
-Calculate the percentage of students with a passing reading score (70 or greater)
-passing_reading = len(school_data_complete.loc[school_data_complete["reading_score"]>=70]["reading_score"])/ttl_students*100       
+Calculate the percentage of students with a passing reading score (70 or greater)          
+passing_reading = len(school_data_complete.loc[school_data_complete["reading_score"]>=70]["reading_score"])/ttl_students*100             
 
 Create a dataframe to hold the above results                 
 d = {'Total Schools': [ttl_schools],          
