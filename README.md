@@ -154,3 +154,15 @@ school_summary_df.style.format({"Total Students": "{:,.0f}",
 https://github.com/wolexyg/Data-Analysis-with-Python-Projects/blob/7f2c8772490db7b47f4ded3b6f49fd241d0bbfd8/schools%20record.JPG
 
 
+## Project 2-Student Scores Analysis     
+This project is designed to analyze student score using Python and data analysis techniques. It aims to provide insights into gender    distribution,ethnic groups,relationship between Parent education and Student scores. identify areas needing improvement, and promote     data-driven decisions in educational environments.   
+
+## Tools
+-  Python 3.9 or higher
+-  Jupyter notebook
+
+  ## Results
+  
+
+
+
