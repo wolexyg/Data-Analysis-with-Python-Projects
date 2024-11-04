@@ -26,17 +26,17 @@ Create a high level snapshot (in table form) of the district's key metrics, incl
 ## School Summary                 
 Create an overview table that summarizes key metrics about each school, including:      
 
-School Name           
-School Type      
-Total Students      
-Total School Budget       
-Per Student Budget        
-Average Math Score       
-Average Reading Score        
-% Passing Math       
-% Passing Reading         
-Overall Passing Rate (Average of the above two)       
-Create a dataframe to hold the above results            
+-  School Name           
+-  School Type      
+-  Total Students      
+-  Total School Budget       
+-  Per Student Budget        
+-  Average Math Score       
+-  Average Reading Score        
+-  % Passing Math       
+-  % Passing Reading         
+-  Overall Passing Rate (Average of the above two)       
+ --Create a dataframe to hold the above results            
 
 ## Data Sources 
 The primary datasets used for thies project was dwonloaded from https://www.kaggle.com/code/jamiedataviz/module4     
