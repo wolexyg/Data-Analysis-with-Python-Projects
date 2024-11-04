@@ -63,6 +63,7 @@ d = {'Total Schools': [ttl_schools],
 district_summary_df = pd.DataFrame(data=d)               
 district_summary_df  
 
-## Results
+## Results       
+https://github.com/wolexyg/Data-Analysis-with-Python-Projects/blob/7f2c8772490db7b47f4ded3b6f49fd241d0bbfd8/schools%20record.JPG
 
 
