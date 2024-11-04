@@ -151,6 +151,8 @@ school_summary_df.style.format({"Total Students": "{:,.0f}",
 
 
 ## Results 
+![schools record](https://github.com/user-attachments/assets/9765beac-cf6e-46f1-ae45-7cf293a1bc5a)
+
 
 
 
