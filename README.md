@@ -151,7 +151,7 @@ school_summary_df.style.format({"Total Students": "{:,.0f}",
 
 
 ## Results       
-schools record.JPG 
+schools record.JPG https://github.com/wolexyg/Data-Analysis-with-Python-Projects/blob/c1eaf8c92a8e073a59a3523b3187084bc7edcb5f/schools%20record.JPG 
 
 
 ## Project 2-Student Scores Analysis     
