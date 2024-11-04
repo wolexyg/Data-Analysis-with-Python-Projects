@@ -76,7 +76,51 @@ d = {'Total Schools': [ttl_schools],
      '% Passing Reading': [passing_reading],              
      '% Overall Passing Rate': [overall_pass]}            
 district_summary_df = pd.DataFrame(data=d)               
-district_summary_df  
+district_summary_df      
+
+- School Name         
+by_school_df = school_data_complete.set_index("school_name").groupby("school_name")  
+by_school_df.count()
+-  School Type     
+  # School type         
+#sch_type = school_data_complete.set_index("school_name")["type"]         
+# Note to self - don't HAVE to use combined df.  look at the question.  school makes more sense here.       
+sch_type = school_data.set_index("school_name")["type"]      
+#print(sch_type)      
+# Total Students        
+stu_per_sch = by_school_df["student_name"].count()       
+#print(stu_per_sch)       
+# Total School budget        
+#sch_budget = by_school_df["budget"].value_counts()     
+sch_budget = by_school_df["budget"].mean()      
+#print(sch_budget)        
+# per Student budget     
+per_stu_bud = sch_budget / stu_per_sch    
+#print (per_stu_bud)     
+# Average math and average reading score       
+avg_math_sch = by_school_df["math_score"].mean()    
+#print(avg_math_sch)    
+avg_read_sch = by_school_df["reading_score"].mean()   
+#print(avg_read_sch)             
+# % Passing math and % passing reading        
+#passing_math = len(school_data_complete.loc[school_data_complete["math_score"]>=70]["math_score"])/ttl_students*100     
+
+pass_math_sch = school_data_complete.loc[school_data_complete["math_score"] >= 70].groupby("school_name") ["math_score"].count()/stu_per_sch   
+pass_read_sch = school_data_complete.loc[school_data_complete["reading_score"] >= 70].groupby("school_name")  ["reading_score"].count()/stu_per_sch    
+
+#pass_read_sch = school_data_complete[(school_data_complete["reading_score"] >= 70)]  
+#pass_math_sch = by_school_df.loc[by_school_df["math_score"] >=70]    
+#by_school_df.loc[[by_school_df["math_score"] >=70],['student_name'].count()/stu_per_sch]  
+#print(pass_math_sch)  
+#pass_read_sch = by_school_df.loc[by_school_df["reading_score"] >=70]['student_name'].count()/stu_per_sch  
+#pass_math_sch = by_school_df["math_score"]    
+#pass_read_sch = by_school_df["reading_score"]   
+
+#print(pass_math_sch['math_score'].count())   
+#print(type(pass_read_sch))   
+#print(pass_math_sch, pass_read_sch)   
+#pass_math_sch.groupby?     
+
 
 ## Results       
 https://github.com/wolexyg/Data-Analysis-with-Python-Projects/blob/7f2c8772490db7b47f4ded3b6f49fd241d0bbfd8/schools%20record.JPG
