@@ -150,8 +150,9 @@ school_summary_df.style.format({"Total Students": "{:,.0f}",
 
 
 
-## Results       
-[image alt](https://github.com/wolexyg/Data-Analysis-with-Python-Projects/blob/c1eaf8c92a8e073a59a3523b3187084bc7edcb5f/schools%20record.JPG)
+## Results 
+
+
 
 
 ## Project 2-Student Scores Analysis     
@@ -163,6 +164,7 @@ This project is designed to analyze student score using Python and data analysis
 
   ## Results
   
+![schools record](https://github.com/user-attachments/assets/de78cf4e-b527-42de-857d-5c35e02bc21d)
 
 
 
