@@ -164,9 +164,17 @@ This project is designed to analyze student score using Python and data analysis
 -  Python 3.9 or higher
 -  Jupyter notebook
 
-  ## Results
-  
-![schools record](https://github.com/user-attachments/assets/de78cf4e-b527-42de-857d-5c35e02bc21d)
+  ## Results    
+ ## Gender Distribution based on Student's scores      
+   
+<img src="https://i.ibb.co/c1Dg0ZV/Gender-distribution-based-on-sttudent-scores.jpg" alt="Gender-distribution-based-on-student-scores" border="0">          
+
+## Distribution of Ethnic groups based on students scores    
+<img src="https://i.ibb.co/Y7Rd0fH/Dustribution-of-Ethnic-groups-based-on-student-score.jpg" alt="Dustribution-of-Ethnic-groups-based-on-student-score" border="0">  
+
+## Number of Ethnic groups based on Student's scores    
+<img src="https://i.ibb.co/JKDcFqx/Number-of-Ethnic-groups-based-on-student-score.jpg" alt="Number-of-Ethnic-groups-based-on-student-score" border="0">          
+
 
 
 
