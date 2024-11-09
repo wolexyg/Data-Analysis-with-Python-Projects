@@ -82,22 +82,21 @@ district_summary_df
 by_school_df = school_data_complete.set_index("school_name").groupby("school_name")  
 by_school_df.count()
 -  School Type     
-  # School type         
-#sch_type = school_data_complete.set_index("school_name")["type"]         
-# Note to self - don't HAVE to use combined df.  look at the question.  school makes more sense here.       
+  ## School type         
+#sch_type = school_data_complete.set_index("school_name")["type"]              
 sch_type = school_data.set_index("school_name")["type"]      
 #print(sch_type)      
-# Total Students        
+## Total Students        
 stu_per_sch = by_school_df["student_name"].count()       
 #print(stu_per_sch)       
-# Total School budget        
+## Total School budget        
 #sch_budget = by_school_df["budget"].value_counts()     
 sch_budget = by_school_df["budget"].mean()      
 #print(sch_budget)        
-# per Student budget     
+## per Student budget     
 per_stu_bud = sch_budget / stu_per_sch    
 #print (per_stu_bud)     
-# Average math and average reading score       
+## Average math and average reading score       
 avg_math_sch = by_school_df["math_score"].mean()    
 #print(avg_math_sch)    
 avg_read_sch = by_school_df["reading_score"].mean()   
