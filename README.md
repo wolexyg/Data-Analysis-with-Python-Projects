@@ -22,7 +22,7 @@ Create a high level snapshot (in table form) of the district's key metrics, incl
 -	Calculate the percentage of students with a passing reading score (70 or greater)            
 -	Create a dataframe to hold the above results               
 -	Optional: give the displayed data cleaner formatting
-
+              
 ## School Summary                 
 Create an overview table that summarizes key metrics about each school, including:      
 
@@ -36,7 +36,9 @@ Create an overview table that summarizes key metrics about each school, includin
 -  % Passing Math       
 -  % Passing Reading         
 -  Overall Passing Rate (Average of the above two)       
- --Create a dataframe to hold the above results            
+ --Create a dataframe to hold the above results
+   <img src="https://i.ibb.co/Wp4DFT6/Schools-summary.jpg" alt="Schools-summary" border="0">      
+              
 
 ## Data Sources 
 The primary datasets used for thies project was dwonloaded from https://www.kaggle.com/code/jamiedataviz/module4     
@@ -76,19 +78,22 @@ d = {'Total Schools': [ttl_schools],
      '% Passing Reading': [passing_reading],              
      '% Overall Passing Rate': [overall_pass]}            
 district_summary_df = pd.DataFrame(data=d)               
-district_summary_df      
+district_summary_df         
+  <img src="https://i.ibb.co/g9VbNzR/District-Summary.jpg" alt="District-Summary" border="0">         
 
 - School Name         
 by_school_df = school_data_complete.set_index("school_name").groupby("school_name")  
 by_school_df.count()
+<img src="https://i.ibb.co/qC0yrhd/By-School-Count.jpg" alt="By-School-Count" border="0">              
 -  School Type     
   ## School type         
 #sch_type = school_data_complete.set_index("school_name")["type"]              
 sch_type = school_data.set_index("school_name")["type"]      
-#print(sch_type)      
+#print(sch_type)           
+<img src="https://i.ibb.co/XJyKds8/School-type-score.jpg" alt="School-type-score" border="0">         
 ## Total Students        
 stu_per_sch = by_school_df["student_name"].count()       
-#print(stu_per_sch)       
+#print(stu_per_sch)                     
 ## Total School budget        
 #sch_budget = by_school_df["budget"].value_counts()     
 sch_budget = by_school_df["budget"].mean()      
@@ -134,7 +139,7 @@ overall_pass_sch = (pass_math_sch + pass_read_sch) / 2
      "Average Reading Score": avg_read_sch,    
      "% Passing Math": pass_math_sch,      
      "% Passing Reading": pass_read_sch,    
-     "% Overall Passing Rate": overall_pass_sch})         
+     "% Overall Passing Rate": overall_pass_sch})             
 
 school_summary_df.style.format({"Total Students": "{:,.0f}",     
                 "Total School Budget": "${:,.0f}",        
@@ -143,14 +148,38 @@ school_summary_df.style.format({"Total Students": "{:,.0f}",
                 "Average Reading Score": "{:.2f}",        
                 "% Passing Math": "{:.2%}",       
                 "% Passing Reading": "{:.2%}",      
-                "% Overall Passing Rate": "{:.2%}"})        
+                "% Overall Passing Rate": "{:.2%}"})      
+ <img src="https://i.ibb.co/Wp4DFT6/Schools-summary.jpg" alt="Schools-summary" border="0">      
 
-    
+ ## Top 5 Schools        
+ <img src="https://i.ibb.co/Fn5smhk/Top-s-CHOOLS.jpg" alt="Top-s-CHOOLS" border="0"> 
+ 
+ ## Bottom 5 schools     
+ <img src="https://i.ibb.co/s6JkGZV/Bottom-Schools.jpg" alt="Bottom-Schools" border="0">          
+
+## Maths By Grade      
+<img src="https://i.ibb.co/kgSLqrR/Maths-by-grade.jpg" alt="Maths-by-grade" border="0">          
+
+## Reading Score By Grade    
+<img src="https://i.ibb.co/kS52pc3/Reading-Score-by-Grade.jpg" alt="Reading-Score-by-Grade" border="0">      
+
+## Spendings per Student   
+<img src="https://i.ibb.co/6XXzs7m/Stu-spend.jpg" alt="Stu-spend" border="0">     
+
+## Spendings By Student based on School size   
+<img src="https://i.ibb.co/kK740C1/students-spend-based-on-school-size.jpg" alt="students-spend-based-on-school-size" border="0">      
+
+## School Type      
+<img src="https://i.ibb.co/XJyKds8/School-type-score.jpg" alt="School-type-score" border="0">     
 
 
-
-## Results 
-![schools record](https://github.com/user-attachments/assets/9765beac-cf6e-46f1-ae45-7cf293a1bc5a)
+## Results       
+-  Bailey High came first with a total number of 4976 students,a total school budget of $3,124,928
+-  Cabrera High School came first as the top 5 Schools with overall passing rate of 95.59%.
+-  Rodriguez High School came as the least 5 schools with an overall passing rate of 73.29%
+-  Shelton High School had the highest Reading Score By grade for the 9th grade(84.12) and 11th grade(84.37),Cabrera High School had the higest for the 10th grade(84.25) and Holden High School had the highest Reading Score by grade for 12th grade(84.70)..
+-  Charter School type had the highest overall percentage passing rate of 95.10%.           
+  
 
 
 
