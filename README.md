@@ -81,54 +81,59 @@ district_summary_df = pd.DataFrame(data=d)
 district_summary_df         
   <img src="https://i.ibb.co/g9VbNzR/District-Summary.jpg" alt="District-Summary" border="0">         
 
-- School Name         
-by_school_df = school_data_complete.set_index("school_name").groupby("school_name")  
-by_school_df.count()
-<img src="https://i.ibb.co/qC0yrhd/By-School-Count.jpg" alt="By-School-Count" border="0">              
--  School Type     
-  ## School type         
-#sch_type = school_data_complete.set_index("school_name")["type"]              
-sch_type = school_data.set_index("school_name")["type"]      
-#print(sch_type)           
-<img src="https://i.ibb.co/XJyKds8/School-type-score.jpg" alt="School-type-score" border="0">         
-## Total Students        
-stu_per_sch = by_school_df["student_name"].count()       
-#print(stu_per_sch)                     
-## Total School budget        
-#sch_budget = by_school_df["budget"].value_counts()     
+## School Name                     
+by_school_df = school_data_complete.set_index("school_name").groupby("school_name")       
+by_school_df.count()        
+<img src="https://i.ibb.co/qC0yrhd/By-School-Count.jpg" alt="By-School-Count" border="0"> 
+
+  ## School type                  
+#sch_type = school_data_complete.set_index("school_name")["type"]                      
+sch_type = school_data.set_index("school_name")["type"]           
+#print(sch_type)                    
+<img src="https://i.ibb.co/XJyKds8/School-type-score.jpg" alt="School-type-score" border="0">      
+
+## Total Students                    
+stu_per_sch = by_school_df["student_name"].count()               
+#print(stu_per_sch)  
+
+## Total School budget                   
+#sch_budget = by_school_df["budget"].value_counts()             
 sch_budget = by_school_df["budget"].mean()      
-#print(sch_budget)        
-## per Student budget     
-per_stu_bud = sch_budget / stu_per_sch    
-#print (per_stu_bud)     
-## Average math and average reading score       
-avg_math_sch = by_school_df["math_score"].mean()    
-#print(avg_math_sch)    
-avg_read_sch = by_school_df["reading_score"].mean()   
-#print(avg_read_sch)             
-## % Passing math and % passing reading        
-#passing_math = len(school_data_complete.loc[school_data_complete["math_score"]>=70]["math_score"])/ttl_students*100     
+#print(sch_budget)         
 
-pass_math_sch = school_data_complete.loc[school_data_complete["math_score"] >= 70].groupby("school_name") ["math_score"].count()/stu_per_sch   
-pass_read_sch = school_data_complete.loc[school_data_complete["reading_score"] >= 70].groupby("school_name")  ["reading_score"].count()/stu_per_sch    
+## per Student budget       
+per_stu_bud = sch_budget / stu_per_sch       
+#print (per_stu_bud)      
 
-#pass_read_sch = school_data_complete[(school_data_complete["reading_score"] >= 70)]  
-#pass_math_sch = by_school_df.loc[by_school_df["math_score"] >=70]    
-#by_school_df.loc[[by_school_df["math_score"] >=70],['student_name'].count()/stu_per_sch]  
-#print(pass_math_sch)  
-#pass_read_sch = by_school_df.loc[by_school_df["reading_score"] >=70]['student_name'].count()/stu_per_sch  
-#pass_math_sch = by_school_df["math_score"]    
-#pass_read_sch = by_school_df["reading_score"]   
+## Average math and average reading score              
+avg_math_sch = by_school_df["math_score"].mean()        
+#print(avg_math_sch)         
+avg_read_sch = by_school_df["reading_score"].mean()       
+#print(avg_read_sch)    
 
-#print(pass_math_sch['math_score'].count())   
-#print(type(pass_read_sch))   
-#print(pass_math_sch, pass_read_sch)   
-#pass_math_sch.groupby?    
+## % Passing math and % passing reading             
+#passing_math = len(school_data_complete.loc[school_data_complete["math_score"]>=70]["math_score"])/ttl_students*100         
+pass_math_sch = school_data_complete.loc[school_data_complete["math_score"] >= 70].groupby("school_name") ["math_score"].count()/stu_per_sch        
+pass_read_sch = school_data_complete.loc[school_data_complete["reading_score"] >= 70].groupby("school_name")  ["reading_score"].count()/stu_per_sch         
 
-## Calculate the overall passing rate (overall average score), i.e. (avg. math score + avg. reading score)/2     
-overall_pass_sch = (pass_math_sch + pass_read_sch) / 2     
+#pass_read_sch = school_data_complete[(school_data_complete["reading_score"] >= 70)]     
+#pass_math_sch = by_school_df.loc[by_school_df["math_score"] >=70]           
+#by_school_df.loc[[by_school_df["math_score"] >=70],['student_name'].count()/stu_per_sch]      
+#print(pass_math_sch)        
+#pass_read_sch = by_school_df.loc[by_school_df["reading_score"] >=70]['student_name'].count()/stu_per_sch       
+#pass_math_sch = by_school_df["math_score"]          
+#pass_read_sch = by_school_df["reading_score"]           
+
+#print(pass_math_sch['math_score'].count())       
+#print(type(pass_read_sch))       
+#print(pass_math_sch, pass_read_sch)     
+
+## pass_math_sch.groupby?             
+## Calculate the overall passing rate (overall average score), i.e. (avg. math score + avg. reading score)/2        
+overall_pass_sch = (pass_math_sch + pass_read_sch) / 2           
 #overall_pass_sch = (avg_math_sch + avg_read_sch) / 2      
 #print(overall_pass_sch)       
+
 ## Data frame to hold School Summary Info     
  school_summary_df = pd.DataFrame({     
      "School Type": sch_type,    
