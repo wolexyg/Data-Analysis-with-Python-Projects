@@ -164,7 +164,7 @@ school_summary_df.style.format({"Total Students": "{:,.0f}",
 <img src="https://i.ibb.co/kS52pc3/Reading-Score-by-Grade.jpg" alt="Reading-Score-by-Grade" border="0">      
 
 ## Spendings per Student   
-<img src="https://i.ibb.co/6XXzs7m/Stu-spend.jpg" alt="Stu-spend" border="0">     
+<img src="https://i.ibb.co/xfMqSQj/Spendings-Per-Student.jpg" alt="Spendings-Per-Student" border="0">    
 
 ## Spendings By Student based on School size   
 <img src="https://i.ibb.co/kK740C1/students-spend-based-on-school-size.jpg" alt="students-spend-based-on-school-size" border="0">      
@@ -173,7 +173,10 @@ school_summary_df.style.format({"Total Students": "{:,.0f}",
 <img src="https://i.ibb.co/XJyKds8/School-type-score.jpg" alt="School-type-score" border="0">     
 
 
-## Results       
+## Results  
+-  Total number of schools is 15
+-  Total Students-39170
+-  Total Budget is $24,649,428
 -  Bailey High came first with a total number of 4976 students,a total school budget of $3,124,928
 -  Cabrera High School came first as the top 5 Schools with overall passing rate of 95.59%.
 -  Rodriguez High School came as the least 5 schools with an overall passing rate of 73.29%
