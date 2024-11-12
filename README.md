@@ -245,8 +245,7 @@ Companies in the entertainment industry nowadays face a substantial risk: Large 
   <img src="https://i.ibb.co/n67wyh5/ROI-Median-Stars-and-Directors.jpg" alt="ROI-Median-Stars-and-Directors" border="0">
   <img src="https://i.ibb.co/kJDjtyk/ROI-Median-Genre-and-Country-of-Origin.jpg" alt="ROI-Median-Genre-and-Country-of-Origin" border="0">
   <img src="https://i.ibb.co/FBV5P32/Profit-median-Stars-and-Directors.jpg" alt="Profit-median-Stars-and-Directors" border="0">
-  <img src="https://i.ibb.co/2hD5jr6/Profit-median-Genre-and-Country-of-origin.jpg" alt="Profit-median-Genre-and-Country-of-origin" border="0">
-  <img src="https://i.ibb.co/wB61Bp5/Profit-median-and-filming-location.jpg" alt="Profit-median-and-filming-location" border="0">
+  <img src="https://i.ibb.co/2hD5jr6/Profit-median-Genre-and-Country-of-origin.jpg" alt="Profit-median-Genre-and-Country-of-origin" border="0">    
   <img src="https://i.ibb.co/N3DZJX1/Income-median-stars-and-directors.jpg" alt="Income-median-stars-and-directors" border="0">
   <img src="https://i.ibb.co/k1JJqCN/Income-median-country-of-origin-and-gender.jpg" alt="Income-median-country-of-origin-and-gender" border="0">
   <img src="https://i.ibb.co/bgZmSht/Income-filming-location.jpg" alt="Income-filming-location" border="0">
