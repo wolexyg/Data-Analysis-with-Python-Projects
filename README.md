@@ -254,6 +254,20 @@ Companies in the entertainment industry nowadays face a substantial risk: Large 
   <img src="https://i.ibb.co/09HKZwr/Month-and-Cerificate-Movies1.jpg" alt="Month-and-Cerificate-Movies1" border="0">
 
   ## Insights
+  The exploratory data analysis provides multiple insights that can be utilized by movie production companies - the most important ones are:                  
+- June, May, and July are the most profitable release months. The profitability is at least 50% higher in June and May than in all other months except July.             
+- Adventure, Sci-Fi and Action are the 'most profitable' genres.           
+- Dwayne Johnson, Samuel L. Jackson and Brad Pitt are the 'most profitable' actors to cast.             
+- The rating of the movie is not significantly correlated with profit. Movies can be very profitable but not be relatively high rated by audiences.                    
+## Different production companies might want to pursue a different measure of financial performance. Maximizing ROI instead of profit could be more valuable to those.            
+The following are a few of the data analysis insights:           
+- January is in the top 3 months if the aim is to maximize ROI, while for profit it's only 8th highest.         
+- Certificate NC-17 generates the highest ROI on average, while it's least effective when the aim is profit.        
+- Having Quentin Tarantino as a director suggests the highest chance at maximizing ROI, while he's only 5th if the aim is profit.        
+- Scarlett Johansson as a star generates the highest ROI on average, while only 11th highest when the aim is profit.      
+- Adventure, Comedy and Romance are the top 3 genres for maximizing ROI              
+- China, Spain and the United States are the top 3 filming locations for maximizing ROI.          
+
   
 
 
