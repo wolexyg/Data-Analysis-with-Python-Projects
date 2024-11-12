@@ -203,13 +203,30 @@ This project is designed to analyze student score using Python and data analysis
   ## Results    
  ## Gender Distribution based on Student's scores      
    
-<img src="https://i.ibb.co/c1Dg0ZV/Gender-distribution-based-on-sttudent-scores.jpg" alt="Gender-distribution-based-on-student-scores" border="0">          
+<img src="https://i.ibb.co/c1Dg0ZV/Gender-distribution-based-on-sttudent-scores.jpg" alt="Gender-distribution-based-on-student-scores" border="0">        
+
+## From the above Chart We have analysed from the data that the number of females is more than the number of males.
 
 ## Distribution of Ethnic groups based on students scores    
-<img src="https://i.ibb.co/Y7Rd0fH/Dustribution-of-Ethnic-groups-based-on-student-score.jpg" alt="Dustribution-of-Ethnic-groups-based-on-student-score" border="0">  
+<img src="https://i.ibb.co/Y7Rd0fH/Dustribution-of-Ethnic-groups-based-on-student-score.jpg" alt="Dustribution-of-Ethnic-groups-based-on-student-score" border="0">         
+
+## Group C has the highest percentage in terms of Ethnic Groups distribution    
 
 ## Number of Ethnic groups based on Student's scores    
-<img src="https://i.ibb.co/JKDcFqx/Number-of-Ethnic-groups-based-on-student-score.jpg" alt="Number-of-Ethnic-groups-based-on-student-score" border="0">          
+<img src="https://i.ibb.co/JKDcFqx/Number-of-Ethnic-groups-based-on-student-score.jpg" alt="Number-of-Ethnic-groups-based-on-student-score" border="0">        
+
+## From the above chart,Group C has the highest score     
+
+## Relationship between Parent's Education and Student's Scores         
+<img src="https://i.ibb.co/m4vBr0p/Relationship-between-Parent-s-Education-and-Student-s-scores.jpg" alt="Relationship-between-Parent-s-Education-and-Student-s-scores" border="0">      
+
+## #from the above chart,we have concluded that the education of the parents have a good impact on their score        
+
+## Relationship between Parent's Marital Status and Student's score     
+<img src="https://i.ibb.co/zVkzSYG/Parents-marital-status-and-Student-s-score.jpg" alt="Parents-marital-status-and-Student-s-score" border="0">           
+
+## from the above chart,we have concluded that there is no negligible impact on the student's score due to their parent's marital status
+
 
 
 
