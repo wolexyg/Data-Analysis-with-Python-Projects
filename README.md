@@ -220,7 +220,7 @@ This project is designed to analyze student score using Python and data analysis
 ## Relationship between Parent's Education and Student's Scores         
 <img src="https://i.ibb.co/m4vBr0p/Relationship-between-Parent-s-Education-and-Student-s-scores.jpg" alt="Relationship-between-Parent-s-Education-and-Student-s-scores" border="0">      
 
-## #from the above chart,we have concluded that the education of the parents have a good impact on their score        
+## from the above chart,we have concluded that the education of the parents have a good impact on their score        
 
 ## Relationship between Parent's Marital Status and Student's score     
 <img src="https://i.ibb.co/zVkzSYG/Parents-marital-status-and-Student-s-score.jpg" alt="Parents-marital-status-and-Student-s-score" border="0">           
