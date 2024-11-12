@@ -227,6 +227,17 @@ This project is designed to analyze student score using Python and data analysis
 
 ## from the above chart,we have concluded that there is no negligible impact on the student's score due to their parent's marital status
 
+# Project 3-Movies and Income data Analysis       
+## Business Data Challenge
+Companies in the entertainment industry nowadays face a substantial risk: Large upfront investments are often necessary for movie productions, but only 20% of movies end up being profitable (Forbes, 2019). Indicators are needed that help companies estimate the financial of their movie, make more informed decisions and so are able to mitigate the risk of loosing money on a movie project. To enhance the movie production company's chances of producing profitable films the use of data analytics is crucial . By analyzing historical data on movie sucess, trends, correlations, and patterns can be uncovered and used to make informed decisions regarding genre, casting, or marketing strategies. Utilizing machine learning algorithms, our predictive models will be able to forecast potential box office performance and allow to optimize resources and achieve maximum profitability.         
+
+## Tools Used    
+- Jupyter noteebook        
+- Python Programming        
+- Pandas Library          
+- Matplotlib for Visualisation        
+
+
 
 
 
